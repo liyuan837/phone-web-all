@@ -1,0 +1,321 @@
+body{
+	background: #f5f5f5;
+}
+/*主体盒子:居中*/
+.taobao_layout{
+	width:100%;
+	max-width: 640px;/*设计图的原因+不让它放大失真*/
+	min-width: 300px;/*为了更好的布局*/
+	margin: 0 auto;
+}
+
+/*头部搜索*/
+.tb_header{
+	position: fixed;/*是以window最外层容器 计算的*/
+	left: 0;
+	top: 0;
+	height: 40px;
+	width:100%;
+	
+	z-index: 1000;
+}
+
+.tb_header .tb_header_box{
+	width:100%;
+	max-width: 640px;/*设计图的原因+不让它放大失真*/
+	min-width: 300px;/*为了更好的布局*/
+	margin: 0 auto;
+	height:40px;
+	background: rgba(255,255,255,0);
+	
+	position: relative;
+}
+
+.tb_header  .tb_header_box .icon_logo{
+	width: 60px;
+	height:36px;
+	/*在base.css中提取*/
+	/*background: url(../img/sprites.png) no-repeat;
+	background-size: 200px 200px;*/
+	background-position: 0 -103px;
+	
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+
+.tb_header  .tb_header_box .login{
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color:#fff;
+	position: absolute;
+	right: 0;
+	top: 0;
+	
+	font-size: 15px;
+}
+
+.tb_header  .tb_header_box form{
+	width: 100%;
+	padding-left: 75px;
+	padding-right: 50px;
+	height: 40px;
+	
+	position: relative;
+}
+
+.tb_header  .tb_header_box form input{
+	width: 100%;
+	height: 30px;
+	border-radius: 15px;
+	margin-top: 5px;
+	
+	padding-left: 30px;
+}
+
+.tb_header  .tb_header_box form .icon_search{
+	height: 20px;
+	width: 20px;
+	background-position:-60px -109px;
+	position: absolute;
+	top: 10px;
+	left: 85px;
+}
+
+
+/*轮播图*/
+.tb_banner{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.tb_banner ul:first-child{
+	width: 1000%;/*十张图，就是10倍屏幕宽度*/
+	transform: translateX(-10%);/*向左移动一张图片，是的第一张图片显示出来*/
+	-webkit-transform: translateX(-10%);
+}
+
+.tb_banner ul:first-child li{
+	width: 10%;/*li相对于ul只占其10%*/
+	float: left;
+}
+
+.tb_banner ul:first-child li a{
+	width: 100%;/*li相对于ul只占其10%*/
+	display: block;
+}
+
+.tb_banner ul:first-child li a img{
+	width: 100%;/*li相对于ul只占其10%*/
+	vertical-align: middle;
+}
+
+
+.tb_banner ul:last-child {
+	width: 150px;
+	height: 6px;
+	position: absolute;
+	bottom: 6px;
+	left: 50%;
+	margin-left: -75px;
+}
+
+.tb_banner ul:last-child li{
+	width: 6px;
+	height: 6px;
+	float: left;
+	border-radius: 3px;
+	border: solid 1px #fff;
+	margin-left: 10px;
+}
+
+.tb_banner ul:last-child li.now{
+	background: #fff;
+	
+}
+
+
+.tb_banner ul:last-child li:nth-of-type(1){
+	margin-left: 0px;
+}
+
+/*导航栏模块*/
+.tb_nav{
+	width: 100%;
+	background: #fff;
+	border-bottom: solid 1px #ccc;
+}
+
+.tb_nav ul{
+	padding: 10px 0;
+}
+
+.tb_nav ul li{
+	width: 25%;
+	float: left;
+}
+
+.tb_nav ul li a{
+	display: block;
+}
+
+.tb_nav ul li a img{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+}
+
+.tb_nav ul li a p{
+	text-align: center;
+	padding: 6px 0;
+	color:#666
+}
+
+/*商品主盒子*/
+.tb_product{
+	padding: 0 5px;
+}
+
+.tb_product .product_box{
+	width: 100%;
+	background: #fff;
+	margin-top: 10px;
+	box-shadow: 0 0 1px #e0e0e0;
+}
+.tb_product .product_box .product_box_tit{
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	border-bottom: solid 1px #e0e0e0;
+}
+.tb_product .product_box .product_box_tit.no_border{
+	border: none;
+}
+.tb_product .product_box .product_box_tit h3{
+	font-weight: normal;
+	font-size: 15px;
+	padding-left: 20px;
+	position: relative;
+	color:#666;
+}
+.tb_product .product_box .product_box_tit h3::before{
+	/*
+	 * 转块方式：
+	 display:block;
+	 position:absolute;
+	 float:left;
+	 * */
+	content:"";
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 3px;
+	height: 12px;
+	background: #d6505c;
+}
+
+/*掌上秒杀*/
+.tb_sk{
+	
+}
+.tb_sk .sk_icon{
+	background: url(../img/seckill-icon.png) no-repeat;
+	background-size: 16px 20px;
+	width: 16px;
+	height: 20px;
+	float:left;
+	margin-top:6px;
+}
+
+.tb_sk .sk_name{
+	color:#d8505c;
+	font-size: 15px;
+	margin-left: 10px;
+	float:left;
+}
+.tb_sk .sk_time{
+	float:left;
+	margin-top: 8px;
+	margin-left: 10px;
+}
+
+.tb_sk .sk_time span{
+	float: left;
+	width: 15px;
+	height:15px;
+	line-height: 15px;
+	text-align: center;
+	background: #333;
+	color:#fff;
+	margin-left: 3px;
+}
+
+.tb_sk .sk_time span:nth-child(3n){
+	background: #FFFFFF;
+	color:#333;
+	width: 5px;
+}
+
+.tb_sk .product_box_con ul{
+	width: 100%;
+	font-size: 12px;
+	padding: 10px 0 10px 0;
+}
+
+.tb_sk .product_box_con ul li{
+	width: 33.3333%;
+	float: left;
+	text-align: center;
+}
+.tb_sk .product_box_con ul li a{
+	display: block;
+	width: 100%;
+	border-right: solid 1px #E0E0E0;
+}
+.tb_sk .product_box_con ul li:last-child a{
+	border-right: none;
+}
+.tb_sk .product_box_con ul li a img{
+	width: 64%;
+	margin: 0 auto;
+	display: block;
+}
+/*
+ E first-of-type：选择与E同级的同类型的第一个元素
+ * */
+.tb_sk .product_box_con ul li p:first-of-type{
+	color:#D8505C;
+	padding-top: 5px;
+	
+}
+.tb_sk .product_box_con ul li p:last-of-type{
+	text-decoration: line-through;
+	color:#666;
+	padding-top: 5px;
+}
+
+/*组合样式*/
+.w_50{
+	width:50%;
+	display: block;
+}
+
+.w_50 > img{
+	display: block;
+	width: 100%;
+}
+.b_left{
+	border-left: solid 1px #e0e0e0;
+}
+.b_right{
+	border-right: solid 1px #e0e0e0;
+}
+.b_bottom{
+	border-bottom: solid 1px #e0e0e0;
+}
+
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <title>百度</title>
+    <link rel="stylesheet" href="res/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <style type="text/css">
+        .bd-layout{
+            width: 100%;
+        }
+
+        /*bd-nav-box: start*/
+        .bd-nav-box{
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            background: #3385ff;
+            text-align: center;
+        }
+        .bd-nav-box > ul{
+
+        }
+        .bd-nav-box > ul > li{
+            display: inline-block;
+            width: 25%;
+        }
+        .bd-nav-box > ul > li > i{
+            color: #fff;
+            font-size: 18px;
+        }
+        .bd-nav-box > ul > li > span{
+            color: #fff;
+            font-size: 16px;
+            margin-left: 5px;
+        }
+        /*bd-nav-box: end*/
+
+        /*bd-search-box: start*/
+        .bd-search-box{
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            background: #3385ff;
+            text-align: center;
+            position: relative;
+
+        }
+        .bd-search-box > i{
+            height: 22px;
+            font-size: 22px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 15%;
+            margin: auto;
+        }
+        .bd-search-box > input{
+            width: 96%;
+            height: 37px;
+            background: #fff;
+            font-size: 14px;
+            text-align: center;
+        }
+        /*bd-search-box: end*/
+
+        /*bd-menu-box: start*/
+        .bd-menu-box{
+            width: 100%;
+            background: #eeeeee;
+
+            border-bottom: solid 2px #cccccc;
+        }
+        .bd-menu-box > p.menu-title{
+            color: #999999;
+            padding: 10px;
+        }
+        .bd-menu-box > ul{
+        }
+        .bd-menu-box > ul > li{
+            display: inline-block;
+            text-align: center;
+            width: 25%;
+            padding: 0 10px 10px 10px;
+        }
+        .bd-menu-box > ul > li > img{
+            width: 90%;
+        }
+        .bd-menu-box > ul > li > span{
+            color: #999999;
+        }
+        /*bd-position-box: end*/
+        .bd-position-box{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 10px 0 10px;
+            background: #eeeeee;
+            border-bottom: solid 1px #cccccc;
+        }
+
+        .bd-position-box > i {
+            color: #1a6fff;
+        }
+        .bd-position-box > a {
+            color:#1a6fff;
+        }
+        /*bd-position-box*/
+    </style>
+</head>
+<body>
+    <div class="bd-layout">
+        <div class="bd-nav-box">
+            <ul>
+                <li class="f_left">
+                    <i class="fa fa-map-marker"></i>
+                    <span>地图</span>
+                </li>
+                <li class="f_left">
+                    <i class="fa fa-arrows"></i>
+                    <span>周边</span>
+                </li>
+                <li class="f_left">
+                    <i class="fa fa-random"></i>
+                    <span>路线</span>
+                </li>
+                <li class="f_left">
+                    <i class="fa fa-user"></i>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="bd-search-box">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="搜地点、查公交、找路线">
+        </div>
+        <div class="bd-menu-box">
+            <p class="menu-title">生活服务</p>
+            <ul class="clearfix">
+                <li class="f_left"><img src="img/menu1.png"/><div>美食</div></li>
+                <li class="f_left"><img src="img/menu2.png"/><div>酒店</div></li>
+                <li class="f_left"><img src="img/menu3.png"/><div>景点</div></li>
+                <li class="f_left"><img src="img/menu4.png"/><div>电影</div></li>
+                <li class="f_left"><img src="img/menu5.png"/><div>银行</div></li>
+                <li class="f_left"><img src="img/menu6.png"/><div>洗浴</div></li>
+                <li class="f_left"><img src="img/menu7.png"/><div>超市</div></li>
+                <li class="f_left"><img src="img/menu8.png"/><div>更多</div></li>
+            </ul>
+        </div>
+        <div class="bd-menu-box">
+            <p class="menu-title">生活服务</p>
+            <ul class="clearfix">
+                <li class="f_left"><img src="img/menu11.png"/><div>地铁图</div></li>
+                <li class="f_left"><img src="img/menu12.png"/><div>公交站</div></li>
+                <li class="f_left"><img src="img/menu13.png"/><div>打车</div></li>
+                <li class="f_left"><img src="img/menu8.png"/><div>更多</div></li>
+            </ul>
+        </div>
+        <div class="bd-position-box">
+            <i class="fa fa-life-saver"></i>
+            <span>我的位置：江苏省镇江市京口区学府路28号</span>
+            <a class="f_right" href="javascript:void(0)">修改</a>
+        </div>
+    </div>
+</body>
+</html>
